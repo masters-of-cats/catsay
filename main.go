@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	xsaypkg "github.com/fouralarmfire/xsay/mainframe"
+	"github.com/fouralarmfire/xsay"
 )
 
 func main() {
-	cat := xsaypkg.NewMainframe(catAscii(), defaultMessage())
+	cat := xsay.New("catsay.ascii", "MEOW!")
 
 	fmt.Print("\n")
 	cat.Say()
